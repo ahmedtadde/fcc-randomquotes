@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+  background-color: black;
+  padding: 15px 25px;
+  margin-right: 15px;
+  border-radius: 4px;
+  color: lightgrey;
+  font-size: 18px;
+  box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px
+}
+
+button:focus {outline:0;}
+button:hover{
+  color:black;
+  background-color: white;
+}
+
+#wrapper{
+  background-color: lightgrey;
+  max-width: 780px;
+  margin: 50px auto;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 3fr;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box{
+  margin: 5px auto;
+  padding:5px;
+}
+
+#intro{
+  font-size: 20px;
+  letter-spacing: 0.375px;
+  text-align: justify;
+}
+
+#buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: lightgrey;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+}
+
+
+#quote-text{
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
