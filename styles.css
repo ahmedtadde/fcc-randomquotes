@@ -7,6 +7,17 @@ body{
   height: 100%;
   font-size: 15px;
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+a, button, h1{
+  font-family: "Shadows Into Light", cursive;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
 }
 
 button{
@@ -26,6 +37,10 @@ button:hover{
   background-color: white;
 }
 
+h1{
+  font-size: 35px;
+}
+
 #wrapper{
   background-color: lightgrey;
   max-width: 780px;
@@ -43,7 +58,7 @@ button:hover{
 }
 
 #intro{
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.375px;
   text-align: justify;
 }
@@ -59,6 +74,7 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
   background-color: black;
   color: lightgrey;
   border-radius: 5px;
@@ -69,5 +85,4 @@ button:hover{
 #quote-text{
   margin-bottom: 10px;
   padding: 10px;
-  font-size: 18px;
 }
