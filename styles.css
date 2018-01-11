@@ -4,20 +4,19 @@
 }
 
 body{
-  height: 100%;
   font-size: 15px;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
 }
 
-a, button, h1{
+button, h1{
   font-family: "Shadows Into Light", cursive;
 }
 
 a{
   text-decoration: none;
   color: blue;
-  font-size: 20px;
 }
 
 button{
@@ -31,10 +30,13 @@ button{
   box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline:0;
+}
+
 button:hover{
-  color:black;
-  background-color: white;
+  /* color:black;
+  background-color: white; */
 }
 
 h1{
@@ -48,8 +50,6 @@ h1{
   padding: 15px;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr 3fr;
-  height: 100%;
-  overflow: hidden;
 }
 
 .box{
@@ -85,4 +85,27 @@ h1{
 #quote-text{
   margin-bottom: 10px;
   padding: 10px;
+}
+
+
+@media (max-width: 750px){
+  body{
+    height: 100vh;
+    overflow: hidden;
+  }
+  #wrapper{
+    margin:0 auto;
+    padding: 0px;
+    height: 100vh;
+  }
+
+  #intro{
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  #quote{
+    font-size: 15px;
+    border-radius: 0px;
+  }
 }

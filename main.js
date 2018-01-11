@@ -32,27 +32,6 @@ function tweetQuote(){
   let quoteAuthor = document.getElementById('quote-author').innerHTML;
   let text = `"${quoteText}" -${quoteAuthor} `;
   let url = 'https://goo.gl/1DWLNe';
-  // (() => {
-  //   function makeShortUrl() {
-  //     let shortened;
-  //     let longUrl = 'https://ahmedtadde-fcc-randomquotes.herokuapp.com';
-  //     gapi.client.init({
-  //       'apiKey': 'AIzaSyCjbLz0Tw2HfPcvwNChJTJNznETsPQvIn0',
-  //     }).then(function() {
-  //       return gapi.client.request({
-  //         'path': `https://www.googleapis.com/urlshortener/v1/url/?longUrl=${longUrl}`,
-  //       })
-  //     }).then(function(response) {
-  //       console.log(response.result);
-  //       shortened = response.result.id;
-  //       return shortened;
-  //     }, function(reason) {
-  //       console.log('Error: ' + reason.result.error.message);
-  //     });
-  //   };
-  //   // 1. Load the JavaScript client library.
-  //   gapi.load('client', makeShortUrl);
-  // })();
 
   window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
 
